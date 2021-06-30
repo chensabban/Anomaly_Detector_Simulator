@@ -20,7 +20,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-
         System.out.println("Application started");
         FXMLLoader fxl = new FXMLLoader();
         AnchorPane root = fxl.load(getClass().getResource("sample.fxml").openStream());
@@ -33,7 +32,6 @@ public class Main extends Application {
         ViewModel vm = new ViewModel(model);
         primaryStage.setTitle("Flight GUI");
 
-
         //full screen
         Screen screen = Screen.getPrimary();
         Rectangle2D bounds = screen.getVisualBounds();
@@ -41,7 +39,6 @@ public class Main extends Application {
         primaryStage.setY(bounds.getMinY());
         primaryStage.setWidth(bounds.getWidth());
         primaryStage.setHeight(bounds.getHeight());
-        
 
         primaryStage.setScene(scene);
         primaryStage.show();
