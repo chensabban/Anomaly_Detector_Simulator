@@ -1,0 +1,14 @@
+aileron,0,1,-1
+elevator,1,1,-1
+rudder,2,1,-1
+throttle,6,2,0
+altitude,16,10000,-9999
+airSpeed,21,100,0
+heading,19,400,0
+roll,28,45,-40
+pitch,29,18,-10
+yaw,20,100,-40
+port,5400
+ip,127.0.0.1
+run speed,200
+flight path,C:/Users/chens/Desktop/Anomaly_Detector_Simulator/src/reg_flight.csv
