@@ -1,0 +1,189 @@
+.axis:top {
+    -fx-border-color: transparent;
+}
+
+.axis:right {
+    -fx-border-color: transparent;
+}
+
+.axis:bottom {
+    -fx-border-color: transparent;
+    -fx-tick-label-fill: white;
+
+
+}
+
+.axis:left {
+    -fx-border-color: transparent;
+    -fx-tick-label-fill: white;
+
+}
+
+.slider .thumb{
+    -fx-background-color: #292929;
+    -fx-font-size: 20;
+}
+
+/*.slider {
+ -fx-background-color: yellow;
+}*/
+
+.list-view {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-cell{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 ;
+    -fx-alignment: center;
+    -fx-font-size:10;
+    -fx-padding: 0;
+    -fx-background-color: #484445;
+    -fx-font-family: berlin sans sans-serif;
+    -fx-text-fill: #98a29d;
+    -fx-padding: 3;
+}
+
+.list-cell:hover{
+    -fx-background-color: #785aa9;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+#myancor{
+    -fx-background-color: #484445 !important;
+}
+
+.button {
+    -fx-font-size: 11;
+    -fx-content-display: bottom;
+    -fx-text-fill: black;
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+}
+.button:hover{
+    -fx-cursor: hand;
+}
+
+#settings{
+    fx-background-color: #5AA983;
+}
+
+#play{
+    -fx-background-image: url(pic/play.png);
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+#pause{
+    -fx-background-image: url(pic/pause.png);
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+#forward{
+    -fx-background-image: url(pic/forward.png);
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+#backward{
+    -fx-background-image: url(pic/backward.png);
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+#stop{
+    -fx-background-image: url(pic/stop.png);
+    -fx-background-size: 27px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+#fly{
+    fx-background-color: #DB6537;
+}
+
+#featuresTitle{
+    -fx-font-family: Tahoma;
+    -fx-text-fill: #5aa983;
+    -fx-font-size: 15px;
+}
+
+#featuresList{
+    -fx-text-fill: yellow;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+#choose_Algo{
+
+    -fx-background-color: #f5e38a;
+
+}
+
+.menu-item{
+    -fx-background-color: #484445;
+}
+.menu-item .label {
+    -fx-text-fill: white;
+
+}
+
+.menu-item:focused {
+    -fx-background-color: #785aa9;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.split-pane-divider {
+    -fx-background-color: transparent;
+}
+.chart {
+    -fx-create-symbols: false;
+    -fx-tick-label-fill: white;
+}
+
+.chart-vertical-grid-lines {
+-fx-stroke: transparent;
+}
+
+.chart-horizontal-grid-lines {
+-fx-stroke: transparent;
+}
+.chart-plot-background {
+-fx-background-color: #484445;
+}
+.chart-title {
+    -fx-font-size: 1.6em;
+}
+
+
+.chart-legend {
+-fx-background-color:  transparent;
+    -fx-font-size: 10px;
+}
+.chart-legend-item-symbol {
+    -fx-background-radius: 0;
+}
+
+
+.chart-legend-item {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill:transparent;
+    -fx-stroke: transparent;
+}
+
+.chart-legend-item{
+    -fx-text-fill: #5AA983;
+}
+#open{
+    -fx-background-color: #e5d1de;
+}

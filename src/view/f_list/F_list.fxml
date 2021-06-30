@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane layoutX="241.0" layoutY="44.0" prefHeight="239.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.f_list.F_listController">
+    <children>
+        <ListView fx:id="fList" disable="true" layoutX="-226" layoutY="-10" prefHeight="405.0" prefWidth="182.0" />
+        <LineChart fx:id="CorrelatedFeatureLineChart" layoutX="290.0" layoutY="5.0" prefHeight="230.0" prefWidth="290.0">
+            <xAxis>
+                <NumberAxis side="BOTTOM" fx:id="x_c" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="y_c" side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <LineChart fx:id="FeatureLineChart" layoutY="5.0" prefHeight="230.0" prefWidth="290.0">
+            <xAxis>
+                <NumberAxis side="BOTTOM" fx:id="x_f" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="y_f" side="LEFT" />
+            </yAxis>
+        </LineChart>
+    </children>
+</Pane>

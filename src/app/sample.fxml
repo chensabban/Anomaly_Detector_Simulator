@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<?import view.pannel.Pannel?>
+<?import view.f_list.F_list?>
+<?import view.clocks.Clocks?>
+<?import view.joystick.MyJoystick?>
+<?import view.algoGraph.MyAlgoGraph?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.View">
+    <SplitPane fx:id="myancor" dividerPositions="0.794501397949674" orientation="VERTICAL" prefHeight="718.0" prefWidth="1240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-189.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="565.0" prefWidth="1264.0">
+            <Button fx:id="settings" layoutX="10.0" layoutY="459.0" mnemonicParsing="false" onAction="#uploadSettings" prefHeight="50.0" prefWidth="67.0" text="UploadSettings" />
+            <Button fx:id="open" layoutX="85.0" layoutY="459.0" mnemonicParsing="false" onAction="#OpenCsvButton" prefHeight="50.0" prefWidth="60.0" text="Open" />
+            <Button fx:id="fly" disable="true" layoutX="152.0" layoutY="459.0" mnemonicParsing="false" onAction="#connectFg" prefHeight="50.0" prefWidth="60.0" text="Fly!" />
+            <Pane layoutX="259.0" layoutY="277.0" prefHeight="261.0" prefWidth="367.0">
+                <MyAlgoGraph fx:id="myAlgoGraph"></MyAlgoGraph>
+            </Pane>
+            <F_list fx:id="flist"></F_list>
+            <Pane layoutX="994.0" layoutY="308.0" prefHeight="200.0" prefWidth="230.0">
+                <MyJoystick fx:id="myJoystick"></MyJoystick>
+            </Pane>
+            <GridPane layoutX="652.0" layoutY="308.0" prefHeight="200.0" prefWidth="300.0">
+                <Clocks fx:id="clocks"></Clocks>
+            </GridPane>
+            <Text fx:id="featuresList" fill="WHITE" layoutX="45.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Features List" wrappingWidth="159.0" />
+            <Button fx:id="choose_Algo" layoutX="221.0" layoutY="459.0" mnemonicParsing="false" onAction="#LoadAlgo" prefHeight="50.0" prefWidth="75.0" text="Algorithm" />
+        </AnchorPane>
+        <AnchorPane prefHeight="110.0" prefWidth="970.0" />
+        <Pannel fx:id="pannel"></Pannel>
+    </SplitPane>
+</AnchorPane>
